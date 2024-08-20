@@ -13,7 +13,7 @@ class DataFormatter:
 
         for i in range(len(timestamps)):
             formatted_data.append({
-                "x": timestamps[i] * 1000, 
+                "timestamp": timestamps[i] * 1000, 
                 "open": opens[i],
                 "high": highs[i],
                 "low": lows[i],
