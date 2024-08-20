@@ -3,8 +3,7 @@ from datetime import timedelta
 from typing import Tuple, Dict
 
 def calculate_timestamps(interval: str) -> Tuple[int, int]:
-    end_timestamp: int = int(time.time())  # current time in seconds since epoch
-
+    end_timestamp: int = int(time.time()) 
     intervals: Dict[str, timedelta] = {
         "1m": timedelta(minutes=1),
         "5m": timedelta(minutes=5),
@@ -14,9 +13,9 @@ def calculate_timestamps(interval: str) -> Tuple[int, int]:
         "4h": timedelta(hours=4),
         "1d": timedelta(days=1),
         "1w": timedelta(weeks=1),
-        "1m": timedelta(weeks=4),  # Approximate 1 month
-        "3m": timedelta(weeks=13), # Approximate 3 months
-        "6m": timedelta(weeks=26)  # Approximate 6 months
+        "1m": timedelta(weeks=4),
+        "3m": timedelta(weeks=13),
+        "6m": timedelta(weeks=26)
     }
 
     if interval not in intervals:
