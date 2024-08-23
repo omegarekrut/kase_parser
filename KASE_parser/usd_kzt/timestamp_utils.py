@@ -5,10 +5,10 @@ from typing import Tuple, Dict
 def calculate_timestamps(interval: str) -> Tuple[int, int]:
     end_timestamp: int = int(time.time()) 
     intervals: Dict[str, timedelta] = {
-        "1m": timedelta(minutes=1),
-        "5m": timedelta(minutes=5),
-        "15m": timedelta(minutes=15),
-        "30m": timedelta(minutes=30),
+        "1minute": timedelta(minutes=1),
+        "5minute": timedelta(minutes=5),
+        "15minute": timedelta(minutes=15),
+        "30minute": timedelta(minutes=30),
         "1h": timedelta(hours=1),
         "4h": timedelta(hours=4),
         "1d": timedelta(days=1),
